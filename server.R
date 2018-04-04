@@ -12,16 +12,6 @@ shinyServer(function(input, output) {
   # second column of the Qlist
   names(results)  <<- Qlist[,2]
   
-  # Hit counter
-  output$counter <- 
-    renderText({
-      if (!file.exists("counter.Rdata")) counter <- 0
-      if (file.exists("counter.Rdata")) load(file="counter.Rdata")
-      counter <- counter <<- counter + 1
-      
-      save(counter, file="counter.Rdata")     
-      paste0("Hits: ", counter)
-    })
   
   # This renderUI function holds the primary actions of the
   # survey area.
