@@ -36,8 +36,8 @@ shinyServer(function(input, output) {
     if (input$Click.Counter==0) 
       return(
         list(
-          h5("Welcome to Shiny Survey Tool!"),
-          h6("by Francis Smart")
+          h5("Welcome to the Team Needs Assessment"),
+          h6("by Team Participatory System Dynamics (PSD)")
         )
       )
     
@@ -47,9 +47,7 @@ shinyServer(function(input, output) {
       return(
         list(
           h5(textOutput("question")),
-          radioButtons("survey", "Please Select:", 
-            c("Prefer not to answer", option.list()))
-          )
+          radioButtons("survey", "Please Select:")
         )
     
     # Finally we see results of the survey as well as a
