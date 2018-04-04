@@ -4,20 +4,20 @@ library(shiny)
 shinyUI(pageWithSidebar(
   
   #  Application title
-  headerPanel("Shiny Survey Tool v.01"),
+  headerPanel("Team PSD Needs Assessment v.01"),
   
   sidebarPanel(
       # This is intentionally an empty object.
       h6(textOutput("save.results")),
       h5("Created by:"),
-            tags$a("Econometrics by Simulation", 
+            tags$a("Stacey Park based on Francis Smart's Econometrics by Simulation", 
                    href="http://www.econometricsbysimulation.com"),
             h5("For details on how data is generated:"),
             tags$a("Blog Post", 
                    href=paste0("http://www.econometricsbysimulation.com/",
                                "2013/19/Shiny-Survey-Tool.html")),
-            h5("Github Repository:"),
-            tags$a("Survey-Tool", 
+            h5("Team PSD GitHub Repository:"),
+            tags$a("Needs Assessment Survey Code", 
                    href=paste0("https://github.com/EconometricsBySimulation/",
                    "Shiny-Demos/tree/master/Survey")),
             # Display the page counter text.
