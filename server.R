@@ -48,7 +48,7 @@ shinyServer(function(input, output) {
         list(
           h5(textOutput("question")),
           radioButtons("survey", "Please Select:",
-            )
+            c(option.list()))
           )
         )
     
