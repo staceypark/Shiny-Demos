@@ -36,8 +36,9 @@ shinyServer(function(input, output) {
     if (input$Click.Counter==0) 
       return(
         list(
-          h5("Welcome to Shiny Survey Tool!"),
-          h6("by Francis Smart")
+          h5("Welcome to the Team Needs Assessment"),
+          <img src = "https://rawgit.com/lzim/teampsd/teampsd_style/ModelingToLearn_logo1.png"
+          height = "130" width = "500">  
         )
       )
     
@@ -47,8 +48,7 @@ shinyServer(function(input, output) {
       return(
         list(
           h5(textOutput("question")),
-          radioButtons("survey", "Please Select:", 
-            c("Prefer not to answer", option.list()))
+          radioButtons("survey", "Please Select:",
           )
         )
     
