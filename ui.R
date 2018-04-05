@@ -15,6 +15,9 @@ shinyUI(pageWithSidebar(
       h5("Team PSD GitHub Repository:"),
          tags$a("Needs Assessment Survey Code", 
                 href=paste0("https://github.com/lzim/teampsd/tree/master/facilitation_guide/needs_assessment")),
+    
+   
+    ![some caption]("https://rawgit.com/lzim/teampsd/teampsd_style/ModelingToLearn_logo1.png")
       # Display the page counter text.
       h5(textOutput("counter"))
       ),
