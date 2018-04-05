@@ -17,7 +17,7 @@ shinyUI(pageWithSidebar(
                 href=paste0("https://github.com/lzim/teampsd/tree/master/facilitation_guide/needs_assessment")),
     
    
-    ![some caption]("https://rawgit.com/lzim/teampsd/teampsd_style/ModelingToLearn_logo1.png"),
+    ![some caption](logo.png),
       # Display the page counter text.
       h5(textOutput("counter"))
       ),
